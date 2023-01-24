@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Marking Material Interactions with Computer Vision</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Inter:wght@100;200;300;400;500&display=swap" rel="stylesheet"> 
+
+  <script src="./data.js"></script>
+  <script src="./index.js"></script>
+  <link href="./style.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1>Marking Material Interactions with Computer Vision: Annotated Portfolio</h1>
+    <h2>Authors Redacted</h2>
+  </header>
+
+  <div id="main-content">
+    <section id="filters">
+      <h2>Studios</h2>
+      <div>
+        <button data-filter="studio1" class="filter studio-filter">Studio 1: DIY CV Interfaces Studio</button>
+        <button data-filter="studio2" class="filter studio-filter">Studio 2: Tinycade</button>
+        <button data-filter="studio3" class="filter studio-filter">Studio 3: CV Games Studio</button>
+      </div>
+
+      <h2>Interactions</h2>
+      <div id="interaction-filters">
+        <div class="interaction-set">
+          <h3>Rotating / Rolling</h3>
+          <button data-filter="rotating_rotation" class="filter interaction">
+            <img src="img/interactions/rotating_rotation.svg"/>
+          </button>
+
+          <button data-filter="rotating_position" class="filter interaction">
+            <img src="img/interactions/rotating_position.svg"/>
+          </button>
+
+          <button data-filter="rotating_presence" class="filter interaction">
+            <img src="img/interactions/rotating_presence.svg"/>
+          </button>
+        </div>
+
+        <div class="interaction-set">
+          <h3>Pressing / Pushing</h3>
+          <button data-filter="pressing_presence_blur" class="filter interaction">
+            <img src="img/interactions/pressing_presence_blur.svg"/>
+          </button>
+
+          <button data-filter="pressing_presence_block" class="filter interaction">
+            <img src="img/interactions/pressing_presence_block.svg"/>
+          </button>
+        </div>
+
+        <div class="interaction-set">
+          <h3>Sliding</h3>
+          <button data-filter="sliding_position" class="filter interaction">
+            <img src="img/interactions/sliding_position.svg"/>
+          </button>
+
+          <button data-filter="sliding_presence" class="filter interaction">
+            <img src="img/interactions/sliding_presence.svg"/>
+          </button>
+        </div>
+
+        <div class="interaction-set">
+          <h3>Identifying Object</h3>
+          <button data-filter="identifying_object_coin" class="filter interaction">
+            <img src="img/interactions/identifying_object_coin.svg"/>
+          </button>
+
+          <button data-filter="identifying_object_block" class="filter interaction">
+            <img src="img/interactions/identifying_object_block.svg"/>
+          </button>
+        </div>
+
+        <div class="interaction-set">
+          <h3>Tilting</h3>
+          <button data-filter="tilting_position" class="filter interaction">
+            <img src="img/interactions/tilting_position.svg"/>
+          </button>
+
+          <button data-filter="tilting_presence" class="filter interaction">
+            <img src="img/interactions/tilting_presence.svg"/>
+          </button>
+        </div>
+
+        <div class="interaction-set">
+          <h3>Pinching / Grabbing</h3>
+          <button data-filter="pinching_presence" class="filter interaction">
+            <img src="img/interactions/pinching_presence.svg"/>
+          </button>
+        </div>
+
+        <div class="interaction-set">
+          <h3>Flipping</h3>
+          <button data-filter="flipping_presence" class="filter interaction">
+            <img src="img/interactions/flipping_presence.svg"/>
+          </button>
+        </div>
+
+        <div class="interaction-set">
+          <h3>Shaking</h3>
+          <button data-filter="shaking_position" class="filter interaction">
+            <img src="img/interactions/shaking_position.svg"/>
+          </button>
+        </div>
+
+        <div class="interaction-set">
+          <h3>Detecting Light / Wind</h3>
+          <button data-filter="detecting_light_presence" class="filter interaction">
+            <img src="img/interactions/detecting_light_presence.svg"/>
+          </button>
+        </div>
+      </div>
+
+      <button data-filter="none" id="clear-filters">CLEAR FILTERS</button>
+    </section>
+
+    <section id="projects">
+    </section>
+  </div>
+
+  <div id="detail-modal">
+    <div id="modal-hide-bg"></div>
+
+    <div id="modal-content">
+      <div id="modal-info"></div>
+      <button id="hide-modal">DONE</button>
+    </div>
+  </div>
+</body>
+
+</html>
