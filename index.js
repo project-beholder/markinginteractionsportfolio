@@ -41,6 +41,7 @@ window.onload = () => {
       <img src="img/studios/${pd.images[1]}">
 
       <h4>Project Video</h4>
+      ${pd.video}
       <span class="modal-authors">${pd.authors}</span>
     `;
 

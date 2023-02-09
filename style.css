@@ -85,9 +85,9 @@
 /* Everything else */
 
 header {
-  height: 170px;
+  /* height: 180px; */
   border-bottom: 1px solid lightgray;
-  padding: 40px 20px;
+  padding: 30px 20px;
 }
 
 header h1 {
@@ -106,7 +106,7 @@ header h2 {
 
 #projects {
   width: 59vw;
-  height: calc(100vh - 175px);
+  height: calc(100vh - 215px);
   padding: 5px 10px;
   display: flex;
   flex-direction: row;
@@ -142,7 +142,7 @@ header h2 {
 #filters {
   width: 40vw;
   border-right: 1px solid lightgray;
-  height: calc(100vh - 175px);;
+  height: calc(100vh - 215px);;
   overflow: scroll;
   padding: 20px;
 }
@@ -216,5 +216,12 @@ header h2 {
 
 #clear-filters:hover {
   cursor: pointer;
+}
+
+.author {
+    display: inline-block;
+    padding-right: 10px;
+    margin-top: 10px;
+    vertical-align: top;
 }
 
