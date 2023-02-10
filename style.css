@@ -2,9 +2,22 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Inconsolata', monospace;
+  /* font-family: 'Inconsolata', monospace; */
+  font-size: 15px;
+  font-family: Helvetica, sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2, h3, h4 {
+  font-family: monospace;
+}
 
 /* MODAL */
 #detail-modal {
@@ -21,30 +34,34 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-
+  z-index: 101;
   background-color: rgba(63, 63, 63, 0.525);
 }
 
 #modal-content {
-  width: 600px;
+  width: 50vw;
+  max-width: 1000px;
   position: absolute;
   top: 20px;
-  left: calc(50vw - 300px);
+  left: calc(50vw - min(25vw, 500px));
   height: calc(100vh - 40px);
-  overflow: scroll;
-  z-index: 100;
+  overflow-y: scroll;
+  z-index: 101;
   background-color: white;
-
-  padding: 20px;
+  padding: 2em;
   border: 1px solid lightgray;
 }
 
+#modal-info h2 {
+  font-size: 1.5em;
+}
+
 #modal-info h4 {
-  font-weight: 200;
+  font-weight: 400;
   text-transform: uppercase;
   font-size: 16px;
   line-height: 22px;
-  margin-top: 10px;
+  margin-top: 2em;
   margin-bottom: 5px;
 }
 
@@ -86,8 +103,9 @@
 
 header {
   /* height: 180px; */
-  border-bottom: 1px solid lightgray;
+  /* border-bottom: 1px solid lightgray; */
   padding: 30px 20px;
+  padding-bottom: 50px;
 }
 
 header h1 {
@@ -99,27 +117,33 @@ header h2 {
 }
 
 #main-content {
+  position: relative;
   width: 100vw;
-  display: flex;
-  flex-direction: row;
+  /* display: flex; */
+  /* flex-direction: row; */
 }
 
 #projects {
-  width: 59vw;
-  height: calc(100vh - 215px);
-  padding: 5px 10px;
+  position: relative;
+  float: left;
+  width: 70vw;
+  /* height: calc(100vh - 215px); */
+  padding: 5px 5em;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-content: baseline;
 
-  overflow: scroll;
+  /* overflow: scroll; */
   /* gap: 2.5%; */
 }
 
 .project-tile {
-  width: 230px;
-  padding: 10px;
+  width: 300px;
+  padding: 1em;
+  margin: 1.5em;
+  background-color: #EEE;
+  border-radius: 0.5em;
 }
 
 .project-tile:hover {
@@ -140,17 +164,47 @@ header h2 {
 
 /* FILTERS */
 #filters {
-  width: 40vw;
-  border-right: 1px solid lightgray;
-  height: calc(100vh - 215px);;
-  overflow: scroll;
+  position: relative;
+  float: left;
+  width: 30vw;
+  min-width: 400px;
+  /* border-right: 1px solid lightgray; */
+  /* height: calc(100vh - 215px);; */
+  /* overflow: scroll; */
   padding: 20px;
+  border-top: 1px solid #333;
+  border-right: 1px solid #333;
+  border-bottom: 1px solid #333;
+  border-radius: 0 0 0.5em 0;
+  z-index: 100;
+  background: rgba(255, 255, 255, 1.0);
 }
+
+#filters::before {
+  content: "FILTERS";
+  position: absolute;
+  background: #333;
+  transform-origin: 0 0;
+  transform: rotate(90deg);
+  color: white;
+  box-sizing: border-box;
+  height: 2em;
+  width: 10em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: calc(max(30vw, 400px) + 2em);
+  top: -0.5px;
+  letter-spacing: 0.1em;
+  font-family: monospace;
+  border-radius: 0.5em 0.5em 0 0;
+}
+
 
 #filters h2 {
   margin-bottom: 2px;
-  font-size: 20px;
-  font-weight: 300;
+  font-size: 1.2em;
+  font-weight: 600;
   text-transform: uppercase;
 }
 
@@ -168,11 +222,17 @@ header h2 {
   gap: 15px 15px;
 }
 
+.interaction-set {
+  background: #F0F0F0;
+  border-radius: 0.25em;
+}
+
 .interaction-set h3 {
   color: white;
-  background: black;
+  background: #333;
   padding: 2px 5px;
   font-weight: 301;
+  border-radius: 0.25em 0.25em 0 0;
 }
 
 .filter {
@@ -206,12 +266,21 @@ header h2 {
   /* color: white; */
 }
 
+button {
+  font-family: monospace;
+  border-radius: 0.25em;
+  background: #CCC;
+  color: black;
+}
+
 #clear-filters {
-  border: none;
+  border: 1px solid #333;
   padding: 6px 10px;
-  font-size: 20px;
+  font-size: 1em;
   margin-top: 50px;
   font-weight: 200;
+  letter-spacing: 0.1em;
+  background: none;
 }
 
 #clear-filters:hover {
@@ -220,8 +289,20 @@ header h2 {
 
 .author {
     display: inline-block;
-    padding-right: 10px;
-    margin-top: 10px;
+    padding-right: 2em;
+    margin-top: 2em;
     vertical-align: top;
+    font-weight: 200;
+    font-size: 0.9em;
+}
+
+.author b {
+  font-size: 1.5em;
+}
+
+#paper-link {
+  margin: 1em 0;
+  font-weight: 600;
+  font-family: Helvetica, sans-serif;
 }
 

@@ -26,7 +26,7 @@ const PROJECT_DATA = [
   {
     listID: 0, // 1, 2, 3, 4, 5, 6
     id: 'project1A',
-    name: 'Aru-Controls',
+    name: '1A: Aru-Controls',
     images: ['P1A_1.png', 'P1A_2.png'],
     studio: ['studio1'],
     studioName: 'Studio 1: DIY CV Interfaces Studio',
@@ -40,7 +40,7 @@ const PROJECT_DATA = [
   {
     listID: 1,
     id: 'project1B',
-    name: 'Elucidate',
+    name: '1B: Elucidate',
     images: ['P1B_1.png', 'P1B_2.png'],
     studio: ['studio1'],
     studioName: 'Studio 1: DIY CV Interfaces Studio',
@@ -54,7 +54,7 @@ const PROJECT_DATA = [
   {
     listID: 2,
     id: 'project1C',
-    name: 'FunFund',
+    name: '1C: FunFund',
     images: ['P1C_1.JPG', 'P1C_2.jpg'],
     studio: ['studio1'],
     studioName: 'Studio 1: DIY CV Interfaces Studio',
@@ -68,7 +68,7 @@ const PROJECT_DATA = [
   {
     listID: 3,
     id: 'project1D',
-    name: 'HEXBOX',
+    name: '1D: HEXBOX',
     images: ['P1D_1.jpg', 'P1D_2.jpg'],
     studio: ['studio1'],
     studioName: 'Studio 1: DIY CV Interfaces Studio',
@@ -82,7 +82,7 @@ const PROJECT_DATA = [
   {
     listID: 4,
     id: 'project1E',
-    name: 'Stickibeats',
+    name: '1E: Stickibeats',
     images: ['P1E_1.jpg', 'P1E_2.jpg'],
     studio: ['studio1'],
     studioName: 'Studio 1: DIY CV Interfaces Studio',
@@ -96,7 +96,7 @@ const PROJECT_DATA = [
   {
     listID: 5,
     id: 'project1F',
-    name: 'TILT',
+    name: '1F: TILT',
     images: ['P1F_1.jpg', 'P1F_2.png'],
     studio: ['studio1'],
     studioName: 'Studio 1: DIY CV Interfaces Studio',
@@ -110,7 +110,7 @@ const PROJECT_DATA = [
   {
     listID: 6,
     id: 'project1G',
-    name: 'TRACK',
+    name: '1G: TRACK',
     images: ['P1G_1.jpg', 'P1G_2.png'],
     studio: ['studio1'],
     studioName: 'Studio 1: DIY CV Interfaces Studio',
@@ -125,7 +125,7 @@ const PROJECT_DATA = [
   {
     listID: 7, 
     id: 'project2A',
-    name: 'Lightcycles',
+    name: '2A: Lightcycles',
     images: ['P2A_1.jpg', 'P2A_2.jpg'],
     studio: ['studio2'],
     studioName: 'Studio 2: Tinycade',
@@ -139,7 +139,7 @@ const PROJECT_DATA = [
   {
     listID: 8, 
     id: 'project2B',
-    name: 'Cyber Hockey',
+    name: '2B: Cyber Hockey',
     images: ['P2B_1.jpg', 'P2B_2.jpg'],
     studio: ['studio2'],
     studioName: 'Studio 2: Tinycade',
@@ -153,7 +153,7 @@ const PROJECT_DATA = [
   {
     listID: 9, 
     id: 'project2C',
-    name: 'CLAW',
+    name: '2C: CLAW',
     images: ['P2C_1.jpg', 'P2C_2.jpg'],
     studio: ['studio2'],
     studioName: 'Studio 2: Tinycade',
@@ -167,7 +167,7 @@ const PROJECT_DATA = [
   {
     listID: 10, 
     id: 'project2D',
-    name: 'Data Is Yours',
+    name: '2D: Data Is Yours',
     images: ['P2D_1.png', 'P2D_2.png'],
     studio: ['studio2'],
     studioName: 'Studio 2: Tinycade',
@@ -182,7 +182,7 @@ const PROJECT_DATA = [
   {
     listID: 11, // 12, 13, 14
     id: 'project3A',
-    name: 'Aru-scan',
+    name: '3A: Aru-scan',
     images: ['P3A_1.png', 'P3A_2.png'],
     studio: ['studio3'],
     studioName: 'Studio 3: CV Games Studio',
@@ -196,7 +196,7 @@ const PROJECT_DATA = [
   {
     listID: 12, // 12, 13, 14
     id: 'project3B',
-    name: 'Leapfrog',
+    name: '3B: Leapfrog',
     images: ['P3B_1.png', 'P3B_2.PNG'],
     studio: ['studio3'],
     studioName: 'Studio 3: CV Games Studio',
@@ -210,7 +210,7 @@ const PROJECT_DATA = [
   {
     listID: 13, // 12, 13, 14
     id: 'project3C',
-    name: 'CADE Cafe',
+    name: '3C: CADE Cafe',
     images: ['P3C_1.png', 'P3C_2.png'],
     studio: ['studio3'],
     studioName: 'Studio 3: CV Games Studio',
@@ -224,7 +224,7 @@ const PROJECT_DATA = [
   {
     listID: 14, // 12, 13, 14
     id: 'project3D',
-    name: 'Munchcade',
+    name: '3D: Munchcade',
     images: ['P3D_1.png', 'P3D_2.png'],
     studio: ['studio3'],
     studioName: 'Studio 3: CV Games Studio',
