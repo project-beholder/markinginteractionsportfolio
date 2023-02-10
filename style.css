@@ -229,9 +229,10 @@ header h2 {
 
 .interaction-set h3 {
   color: white;
-  background: #333;
+  background: #555;
   padding: 2px 5px;
-  font-weight: 301;
+  font-weight: 300;
+  font-size: 0.9em;
   border-radius: 0.25em 0.25em 0 0;
 }
 
@@ -262,14 +263,14 @@ header h2 {
 }
 
 .checked, .filter.interaction.checked {
-  background-color: lightgray;
+  background-color: #AAA;
   /* color: white; */
 }
 
 button {
   font-family: monospace;
   border-radius: 0.25em;
-  background: #CCC;
+  background: #DDD;
   color: black;
 }
 
